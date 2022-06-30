@@ -1,0 +1,9 @@
+.Light {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px auto;
+  background-color: #999;
+}
