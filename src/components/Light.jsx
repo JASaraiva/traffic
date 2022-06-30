@@ -1,18 +1,19 @@
+import { useState } from 'react';
 import './Light.css';
 
 function Light(props) {
+  const [color, setColor] = useState('default');
   let default_color = '#999';
-  let color = default_color;
 
   const handleClick = () => {
     if (props.color == 'red') {
-      color = '#f00';
+      setColor('red');
     } else if (props.color == 'yellow') {
-      color = '#ff0';
+      setColor('yellow');
     } else if (props.color == 'green') {
-      color = '#0f0';
+      setColor('green');
     } else {
-      color = '#999';
+      setColor('default');
     }
   };
 
