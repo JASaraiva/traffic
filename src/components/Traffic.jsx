@@ -5,9 +5,9 @@ function Traffic() {
   return (
     <div className="Traffic">
       <div id="container">
-        <Light color="red" />
-        <Light color="yellow" />
-        <Light color="green" />
+        <Light color="Red" />
+        <Light color="Yellow" />
+        <Light color="Green" />
       </div>
     </div>
   );

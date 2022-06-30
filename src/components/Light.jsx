@@ -2,27 +2,18 @@ import { useState } from 'react';
 import './Light.css';
 
 function Light(props) {
-  const [color, setColor] = useState('default');
-  let default_color = '#999';
+  const [classes, setClass] = useState('Light');
+  let disableLight = 'Light';
 
   const handleClick = () => {
-    if (props.color == 'red') {
-      setColor('red');
-    } else if (props.color == 'yellow') {
-      setColor('yellow');
-    } else if (props.color == 'green') {
-      setColor('green');
-    } else {
-      setColor('default');
-    }
+    setClass(props.color);
   };
 
   return (
     <button
-      className="Light"
-      style={{
-        backgroundColor: isActive ? color : default_color,
-      }}
+      className={
+        props.color == classes ? 'ActiveLight' + classes : disableLight
+      }
       onClick={() => {
         handleClick();
       }}

@@ -7,3 +7,33 @@
   margin: 10px auto;
   background-color: #999;
 }
+
+.ActiveLightRed {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px auto;
+  background-color: #f00;
+}
+
+.ActiveLightGreen {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px auto;
+  background-color: #0f0;
+}
+
+.ActiveLightYellow {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px auto;
+  background-color: #ff0;
+}
