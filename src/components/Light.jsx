@@ -12,7 +12,7 @@ function Light(props) {
   return (
     <button
       className={
-        props.color == classes ? 'ActiveLight' + classes : disableLight
+        props.color == classes ? 'ActiveLight' + props.color : disableLight
       }
       onClick={() => {
         handleClick();
